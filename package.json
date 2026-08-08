@@ -1,7 +1,7 @@
 {
   "name": "@letslego/helix-sandbox",
   "version": "0.1.0",
-  "description": "Isolated sandbox compute for Helix agents \u2014 filesystem, glob, grep, allowlisted bash.",
+  "description": "Isolated sandbox compute for Helix agents — filesystem, glob, grep, allowlisted bash.",
   "type": "module",
   "license": "Apache-2.0",
   "repository": {
@@ -25,7 +25,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --import tsx --test test/**/*.test.ts",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "npm run build"
   },
   "engines": {
     "node": ">=20"
